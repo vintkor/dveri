@@ -53,8 +53,19 @@
   src: url(../fonts/Russo-One.ttf);
   font-weight: 700; }
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans"; }
+
 body {
   overflow: hidden; }
+
+::-moz-selection {
+  background: rgba(45, 62, 80, 0.3); }
+
+::selection {
+  background: rgba(45, 62, 80, 0.3); }
 
 .flex {
   display: -webkit-box;
@@ -92,9 +103,9 @@ body {
 
 .dveri_left {
   left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#88BE2A), to(#3d5613));
-  background: -webkit-linear-gradient(top, #88BE2A, #3d5613);
-  background: linear-gradient(180deg, #88BE2A, #3d5613); }
+  background: -webkit-gradient(linear, left top, left bottom, from(#6C991F), to(#212f0a));
+  background: -webkit-linear-gradient(top, #6C991F, #212f0a);
+  background: linear-gradient(180deg, #6C991F, #212f0a); }
   .dveri_left img {
     height: 500px;
     width: auto;
@@ -120,3 +131,56 @@ body {
 
 .container img {
   max-width: 100%; }
+
+.right {
+  text-align: right; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center; }
+
+/* ______________________________ Header ______________________________ */
+.header {
+  background: #f7f7f7; }
+  .header .flex {
+    height: 10vh; }
+  .header h1 {
+    margin: 0; }
+  .header .logo {
+    width: 100%;
+    height: auto; }
+  .header .phone {
+    font-weight: 700;
+    font-size: 25.6px;
+    line-height: 28.8px;
+    color: #6C991F;
+    margin: 0; }
+    .header .phone span {
+      color: #000;
+      font-size: 19.2px;
+      font-weight: 300; }
+
+.section-1 {
+  position: relative;
+  height: 90vh;
+  overflow: hidden;
+  background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.2)), to(rgba(255, 255, 255, 0))), #2D3E50;
+  background: -webkit-linear-gradient(right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)), #2D3E50;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)), #2D3E50; }
+  .section-1 h2 {
+    color: #f7f7f7;
+    font-size: 80px;
+    font-weight: 700;
+    text-align: left; }
+  .section-1 p {
+    color: #a9a9a9;
+    font-size: 32px; }
+    .section-1 p span {
+      font-weight: 700;
+      font-family: "Museo Sans Cyrl", sans-serif;
+      font-size: 80px;
+      color: #6C991F; }
+  .section-1 .door {
+    position: absolute;
+    display: block;
+    right: 100px;
+    top: 30px; }
