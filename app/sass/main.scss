@@ -1,7 +1,73 @@
-
+$green: #88BE2A;
+$dark-green: darken($green, 25%);
+$black: #000;
+$light-black: lighten($black, 25%);
+$white: #fff;
 
 @import "_fonts";
+
+body {
+  overflow: hidden;
+}
 
 ::selection {
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.preloader {
+  display: block;
+  z-index: 810;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
+}
+
+.dveri_left,
+.dveri_right {
+  position: absolute;
+  height: 100vh;
+  width: 50vw;
+  z-index: 800;
+  box-sizing: border-box;
+  transition: transform ease 2s;
+}
+
+.dveri_left {  
+  left: 0;  
+  background: linear-gradient(180deg, $green, $dark-green);
+  img {
+    height: 500px;
+    width: auto;
+    top: 50%;
+    margin-top: -250px;
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.dveri_right {
+  right: 0;
+  background: linear-gradient(180deg, $light-black, $black);
+  img {
+    height: 500px;
+    width: auto;
+    top: 50%;
+    margin-top: -250px;
+    display: block;
+    position: absolute;
+    left: 0;
+  }
+}
+
+.container img {
+  max-width: 100%;
+}
