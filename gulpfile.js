@@ -39,6 +39,9 @@ gulp.task('scripts', function() {
         'app/libs/modernizr.js',
         'app/libs/jquery.maskedinput/dist/jquery.maskedinput.js',
         'app/libs/sweetalert/dist/sweetalert.min.js',
+        'app/libs/wow.js',
+        'app/libs/jquery.scrollTo/jquery.scrollTo.js',
+        'app/libs/jquery.mixitup.min.js'
         ])
         .pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
         //.pipe(uglify()) // Сжимаем JS файл
