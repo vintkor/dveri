@@ -6,6 +6,7 @@ $white: #fff;
 $grey: #f7f7f7;
 $yellow: #aba012;
 $blue: #2D3E50;
+$red: #D84747;
 
 $size: 16px;
 
@@ -54,6 +55,10 @@ p {
   z-index: 800;
   box-sizing: border-box;
   transition: transform ease 2s;
+}
+
+.center {
+  text-align: center;
 }
 
 .dveri_left {  
@@ -136,6 +141,7 @@ h1,h2,h3,h4,h5,h6 {
   }
   h1 {
     margin: 0;
+    color: $blue;
   }   
   .logo {
     width: 100%;
@@ -190,11 +196,18 @@ h1,h2,h3,h4,h5,h6 {
 .section-2 {
   padding: 60px 0;
   img {
-    width: 100%;
+    width: 60%;
   }
   h2 {
     font-size: $size * 2.4;
     margin-bottom: 60px;
+  }
+  h3 {
+    margin-bottom: 30px;
+    color: $blue;
+  }
+  p {
+    text-align: left;
   }
 }
 
@@ -223,6 +236,7 @@ h1,h2,h3,h4,h5,h6 {
   text-align: center;
 
   &:hover {
+    cursor: pointer;
     img {
       transform: scale(1.2);
     }
@@ -299,4 +313,104 @@ h1,h2,h3,h4,h5,h6 {
 }
 .radio:checked + label:after {
   opacity: 1;
+}
+
+.small-img {
+  img {
+    width: 50px;
+    height: auto;
+    transition: .2s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.select-img {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  li {
+    list-style: none;
+  }
+}
+
+.how-we-work {
+  background: $white;
+  padding: 60px 0;
+  h2 {
+    font-size: $size * 2.4;
+    margin-bottom: 60px;
+  }
+  .flex {
+    margin-bottom: 30px;
+  }
+}
+
+.questions {
+  background: $grey;
+  padding: 60px 0;
+  h2 {
+    font-size: $size * 2.4;
+    margin-bottom: 30px;
+    color: $green;
+  }
+  p {
+    font-size: $size * 1.2;
+    line-height: $size * 2;
+    text-align: center;
+  }
+  input {
+    border: 2px solid darken($grey, 10%);
+    width: 100%;
+    text-align: center;
+    font-family: "Museo Sans Cyrl", sans-serif;
+    padding: 5px;
+    font-size: $size * 1.2;
+    font-weight: 100;
+    margin-bottom: 10px;
+    background: $white;
+    transition: .2s;
+    outline: none;
+    color: darken($green, 10%);
+    &:hover,
+    &:focus {
+      border-color: $green;
+    }
+  }
+  input[type="submit"] {
+    background: darken($grey, 10%);
+    color: $blue;
+    &:hover,
+    &:focus {
+      background: $green;
+      color: $white;
+    }
+  }
+}
+
+
+.footer {
+  background: $blue;
+  p {
+    font-size: $size;
+    color: $grey;
+    font-weight: 100;
+    font-family: "Museo Sans Cyrl", sans-serif;
+    padding: 12px 0 2px;
+  }
+  img {
+    width: 23px;
+    height: auto;
+    transition: .2s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.modal-body {
+  input {
+    width: 100%;
+  }
 }

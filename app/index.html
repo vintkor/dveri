@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="css/main.css">
   <!-- endbuild -->
 
+  <script src="js/libs.min.js"></script>
+
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -40,6 +42,39 @@
   </div>
   <img class="preloader" src="img/puff.svg">
 </div>
+
+<script type="text/javascript">
+  
+  /*__________________________ Preloader __________________________*/
+
+  $(window).load(function(){
+
+    function myEnter(){
+
+      // if(documentReady) {
+
+        $(".preloader").hide();
+
+        $(".dveri_left").delay(8000).css({
+          "transform": "translateX(-50vw)"
+        });
+
+        $(".dveri_right").delay(8000).css({
+          "transform": "translateX(50vw)"
+        });
+
+        $("body").css({
+          "overflowY": "auto"
+        })
+      // }
+
+    }
+
+    myEnter();
+    
+  });
+
+</script>
 
 <div class="header">
   <div class="container">
@@ -102,24 +137,24 @@
       <div class="col-md-12">
         <h2>Мы гордимся этим</h2>
       </div>
-      <div class="col-md-3">
-        <img src="//placehold.it/250x250" alt="">
-        <h3>Более 1000 клиентов</h3>
+      <div class="col-md-3 center wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">
+        <img src="img/group.svg" alt="">
+        <h3 class="h3-height">Более 1000 клиентов</h3>
         <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Текст точках парадигматическая но заголовок океана запятой эта. Она большого, образ домах составитель это, букв знаках точках свой семантика путь.</p>
       </div>
-      <div class="col-md-3">
-        <img src="//placehold.it/250x250" alt="">
-        <h3>Собственное производство</h3>
+      <div class="col-md-3 center wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
+        <img src="img/industries.svg" alt="">
+        <h3 class="h3-height">Собственное производство</h3>
         <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Рыбными, грамматики, пунктуация. Имени несколько злых, текстами встретил курсивных его lorem своих буквоград по всей свой большой правилами бросил повстречался власти.</p>
       </div>
-      <div class="col-md-3">
-        <img src="//placehold.it/250x250" alt="">
-        <h3>Гарантия 10 лет</h3>
+      <div class="col-md-3 center wow fadeInRight" data-wow-duration="1s" data-wow-delay=".2s">
+        <img src="img/guarantee.svg" alt="">
+        <h3 class="h3-height">Гарантия 10 лет</h3>
         <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взгляд строчка они толку диких даже всемогущая lorem о, предупреждал живет от всех то, осталось снова до маленький рыбного рот журчит.</p>
       </div>
-      <div class="col-md-3">
-        <img src="//placehold.it/250x250" alt="">
-        <h3>Установка за 24 часа</h3>
+      <div class="col-md-3 center wow fadeInRight" data-wow-duration="1s" data-wow-delay=".4s">
+        <img src="img/24-hours.svg" alt="">
+        <h3 class="h3-height">Установка за 24 часа</h3>
         <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Грустный вершину гор своих дал текстов, точках возвращайся вдали лучше выйти, скатился журчит если вопроса, мир единственное. Напоивший, прямо, большого!</p>
       </div>
     </div>
@@ -130,7 +165,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h2>Наша продукция</h2>
+        <h2>Самые популярные модели</h2>
       </div>
     </div>
     <div class="row">
@@ -149,16 +184,28 @@
       <div class="col-md-6">
         <form class="form-2">
           <div>
-            <input class="filter radio" data-filter=".category-1, .category-2" type="radio" id="1" name="sort">
+            <input class="filter radio" data-filter=".MDF, .poroshok, .laminat, .kovka, .arka" type="radio" id="1" name="sort">
             <label for="1">Все</label>
           </div>
           <div>
-            <input class="filter radio" data-filter=".category-1" type="radio" id="2" name="sort">
-            <label for="2">Обычный</label>
+            <input class="filter radio" data-filter=".MDF" type="radio" id="2" name="sort">
+            <label for="2">Двери МДФ</label>
           </div>
           <div>
-            <input class="filter radio" data-filter=".category-2" type="radio" id="3" name="sort">
-            <label for="3">С солнесным элементом</label>
+            <input class="filter radio" data-filter=".poroshok" type="radio" id="3" name="sort">
+            <label for="3">С порошковым напылением</label>
+          </div>
+          <div>
+            <input class="filter radio" data-filter=".laminat" type="radio" id="4" name="sort">
+            <label for="4">Ламинат</label>
+          </div>
+          <div>
+            <input class="filter radio" data-filter=".kovka" type="radio" id="5" name="sort">
+            <label for="5">Кованые</label>
+          </div>
+          <div>
+            <input class="filter radio" data-filter=".arka" type="radio" id="6" name="sort">
+            <label for="6">Арочные двери</label>
           </div>
         </form>
       </div>
@@ -166,109 +213,551 @@
     <div class="row">
       <div class="col-md-12">
         <div class="row" id="Container">
+
+
         <!-- Product 1 -->
-          <div class="col-md-3 mix category-1" data-my-order="103.35" data-toggle="modal" data-target=".bs-example-modal-lg">
+          <div class="col-md-3 mix MDF" data-my-order="103.35" data-toggle="modal" data-target=".product-1">
             <div class="absolute">
               <div class="product">
-                <h3>Xiaomi 10400mAh</h3>
-                <img src="img/demo.jpg" alt="">
+                <h3>Двери МДФ</h3>
+                <img src="img/0-1.jpg" alt="">
                 <div class="hover-content">
                 </div>
                 <div class="price">103.35 <span>грн.</span></div>
               </div>
             </div>
           </div>
-          <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal fade product-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
               <div class="modal-content">
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                  <h4 class="modal-title" id="myModalLabel">Название модали</h4>
+                  <h4 class="modal-title" id="myModalLabel">Двери МДФ</h4>
                 </div>
                 <div class="modal-body">
-                fgdsfg fgdfsgsdf
+                  <div class="col-sm-6">
+                    <p>
+                      Двери с отделкой МДФ (или двери МДФ) являются универсальной конструкцией, их можно установить снаружи или внутри помещения. С такой защитой вы будете спокойны за своё имущество. Двери МДФ гарантируют полную безопасность. Базовая комплектация включает в себя металлическую основу, стальные полотна, изоляционные материалы, элементы фурнитуры. Кроме этого двери с отделкой МДФ очень привлекательны. Благодаря антивандальному материалу покрытия, входные двери МДФ часто устанавливают на входе в помещение, в том числе в качестве тамбурных дверей. Материал устойчив к воде, воздействию прямых солнечных лучей, климатическим изменениям и метеоусловиям. Двери с покрытием МДФ считаются элитными изделиями. Однако стоимость этой конструкции значительно ниже, чем натуральной дерево. Такие двери необычайно популярны у владельцев офисов и магазинов. Это очень стильная конструкция. Особым спросом пользуются двери с фрезерованной МДФ. Они идеально подходят для загородного дома или отдельной квартиры. Выбрав такую модель, вы автоматически становитесь обладателем статусной вещи.
+                    </p>
+                    <form role="form" class="ajaxform10" method="POST">
+                    <div class="form-group">
+                      <label for="inner2" >Внутреняя отделка</label>
+                      <select id="inner2" name="" class="form-control">
+                        <option name="">1</option>
+                        <option name="">2</option>
+                        <option name="">3</option>
+                        <option name="">4</option>
+                        <option name="">5</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" name="phone" class="form-control phone2 phone10" placeholder="Ваш номер телефона">
+                    </div>
+                      <input type="hidden" value="Двери МДФ">
+                    <div class="form-group">
+                      <input type="submit" value="Заказать" class="btn btn-success">
+                      <br>
+                    </div>
+                    </form>
+                  </div>
+                  <div class="col-sm-6">
+                    <img class="big-img" src="img/0-1.jpg" alt="">
+                  </div>
+                  <div class="col-sm-12">
+                    <ul class="select-img">
+                      <li class="small-img" data-img="img/0-3.jpg"><img src="img/0-3.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/0-4.jpg"><img src="img/0-4.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/0-7.jpg"><img src="img/0-7.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/0-1.jpg"><img src="img/0-1.jpg" alt=""></li>
+                    </ul>
+                  </div>
                 </div>
+                <div class="clearfix"></div>
                 <div class="modal-footer">
                   fgdfgdfdgfdgd
                 </div>
               </div>
             </div>
           </div>
+
+
           <!-- Product 2 -->
-          <div class="col-md-3 mix category-2" data-my-order="198.99">
+          <div class="col-md-3 mix MDF" data-my-order="198.99" data-toggle="modal" data-target=".product-2">
             <div class="absolute">
               <div class="product">
-                <h3>Xiaomi 12800mAh</h3>
-                <img src="img/demo.jpg" alt="">
+                <h3>Двери МДФ</h3>
+                <img src="img/1-4.jpg" alt="">
                 <div class="hover-content">
                 </div>
                 <div class="price">198.99 <span>грн.</span></div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 mix category-1" data-my-order="78.39">
+          <div class="modal fade product-2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">Двери МДФ</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="col-sm-6">
+                    <p>
+                      Двери с отделкой МДФ (или двери МДФ) являются универсальной конструкцией, их можно установить снаружи или внутри помещения. С такой защитой вы будете спокойны за своё имущество. Двери МДФ гарантируют полную безопасность. Базовая комплектация включает в себя металлическую основу, стальные полотна, изоляционные материалы, элементы фурнитуры. Кроме этого двери с отделкой МДФ очень привлекательны. Благодаря антивандальному материалу покрытия, входные двери МДФ часто устанавливают на входе в помещение, в том числе в качестве тамбурных дверей. Материал устойчив к воде, воздействию прямых солнечных лучей, климатическим изменениям и метеоусловиям. Двери с покрытием МДФ считаются элитными изделиями. Однако стоимость этой конструкции значительно ниже, чем натуральной дерево. Такие двери необычайно популярны у владельцев офисов и магазинов. Это очень стильная конструкция. Особым спросом пользуются двери с фрезерованной МДФ. Они идеально подходят для загородного дома или отдельной квартиры. Выбрав такую модель, вы автоматически становитесь обладателем статусной вещи.
+                    </p>
+                    <form role="form" class="ajaxform11" method="POST">
+                    <div class="form-group">
+                      <label for="inner3" >Внутреняя отделка</label>
+                      <select id="inner3" name="" class="form-control">
+                        <option name="">1</option>
+                        <option name="">2</option>
+                        <option name="">3</option>
+                        <option name="">4</option>
+                        <option name="">5</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" name="phone" class="form-control phone2 phone11" placeholder="Ваш номер телефона">
+                    </div>
+                      <input type="hidden" value="Двери МДФ">
+                    <div class="form-group">
+                      <input type="submit" value="Заказать" class="btn btn-success">
+                      <br>
+                    </div>
+                    </form>
+                  </div>
+                  <div class="col-sm-6">
+                    <img class="big-img" src="img/1-4.jpg" alt="">
+                  </div>
+                  <div class="col-sm-12">
+                    <ul class="select-img">
+                      <li class="small-img" data-img="img/1-1.jpg"><img src="img/1-1.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/1-2.jpg"><img src="img/1-2.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/1-3.jpg"><img src="img/1-3.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/1-4.jpg"><img src="img/1-4.jpg" alt=""></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="modal-footer">
+                  fgdfgdfdgfdgd
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Product 3 -->
+          <div class="col-md-3 mix MDF" data-my-order="78.39" data-toggle="modal" data-target=".product-3">
             <div class="absolute">
               <div class="product">
-                <h3>Xiaomi 14800mAh</h3>
-                <img src="img/demo.jpg" alt="">
+                <h3>Двери МДФ</h3>
+                <img src="img/2-3.jpg" alt="">
                 <div class="hover-content">
                 </div>
                 <div class="price">78.39 <span>грн.</span></div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 mix category-1" data-my-order="306.45">
+          <div class="modal fade product-3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">Двери МДФ</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="col-sm-6">
+                    <p>
+                      Двери с отделкой МДФ (или двери МДФ) являются универсальной конструкцией, их можно установить снаружи или внутри помещения. С такой защитой вы будете спокойны за своё имущество. Двери МДФ гарантируют полную безопасность. Базовая комплектация включает в себя металлическую основу, стальные полотна, изоляционные материалы, элементы фурнитуры. Кроме этого двери с отделкой МДФ очень привлекательны. Благодаря антивандальному материалу покрытия, входные двери МДФ часто устанавливают на входе в помещение, в том числе в качестве тамбурных дверей. Материал устойчив к воде, воздействию прямых солнечных лучей, климатическим изменениям и метеоусловиям. Двери с покрытием МДФ считаются элитными изделиями. Однако стоимость этой конструкции значительно ниже, чем натуральной дерево. Такие двери необычайно популярны у владельцев офисов и магазинов. Это очень стильная конструкция. Особым спросом пользуются двери с фрезерованной МДФ. Они идеально подходят для загородного дома или отдельной квартиры. Выбрав такую модель, вы автоматически становитесь обладателем статусной вещи.
+                    </p>
+                    <form role="form" class="ajaxform12" method="POST">
+                    <div class="form-group">
+                      <label for="inner4" >Внутреняя отделка</label>
+                      <select id="inner4" name="" class="form-control">
+                        <option name="">1</option>
+                        <option name="">2</option>
+                        <option name="">3</option>
+                        <option name="">4</option>
+                        <option name="">5</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" name="phone" class="form-control phone2 phone12" placeholder="Ваш номер телефона">
+                    </div>
+                      <input type="hidden" value="Двери МДФ">
+                    <div class="form-group">
+                      <input type="submit" value="Заказать" class="btn btn-success">
+                      <br>
+                    </div>
+                    </form>
+                  </div>
+                  <div class="col-sm-6">
+                    <img class="big-img" src="img/2-4.jpg" alt="">
+                  </div>
+                  <div class="col-sm-12">
+                    <ul class="select-img">
+                      <li class="small-img" data-img="img/2-1.jpg"><img src="img/2-1.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/2-2.jpg"><img src="img/2-2.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/2-3.jpg"><img src="img/2-3.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/2-4.jpg"><img src="img/2-4.jpg" alt=""></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="modal-footer">
+                  fgdfgdfdgfdgd
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Product - 4 -->
+          <div class="col-md-3 mix MDF" data-my-order="306.45" data-toggle="modal" data-target=".product-4">
             <div class="absolute">
               <div class="product">
-                <h3>Xiaomi 16000mAh</h3>
-                <img src="img/demo.jpg" alt="">
+                <h3>Двери МДФ</h3>
+                <img src="img/4-1.jpg" alt="">
                 <div class="hover-content">
                 </div>
                 <div class="price">306.45 <span>грн.</span></div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 mix category-2" data-my-order="789.23">
+          <div class="modal fade product-4" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">Двери МДФ</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="col-sm-6">
+                    <p>
+                      Двери с отделкой МДФ (или двери МДФ) являются универсальной конструкцией, их можно установить снаружи или внутри помещения. С такой защитой вы будете спокойны за своё имущество. Двери МДФ гарантируют полную безопасность. Базовая комплектация включает в себя металлическую основу, стальные полотна, изоляционные материалы, элементы фурнитуры. Кроме этого двери с отделкой МДФ очень привлекательны. Благодаря антивандальному материалу покрытия, входные двери МДФ часто устанавливают на входе в помещение, в том числе в качестве тамбурных дверей. Материал устойчив к воде, воздействию прямых солнечных лучей, климатическим изменениям и метеоусловиям. Двери с покрытием МДФ считаются элитными изделиями. Однако стоимость этой конструкции значительно ниже, чем натуральной дерево. Такие двери необычайно популярны у владельцев офисов и магазинов. Это очень стильная конструкция. Особым спросом пользуются двери с фрезерованной МДФ. Они идеально подходят для загородного дома или отдельной квартиры. Выбрав такую модель, вы автоматически становитесь обладателем статусной вещи.
+                    </p>
+                    <form role="form" class="ajaxform13" method="POST">
+                    <div class="form-group">
+                      <label for="inner4" >Внутреняя отделка</label>
+                      <select id="inner4" name="" class="form-control">
+                        <option name="">1</option>
+                        <option name="">2</option>
+                        <option name="">3</option>
+                        <option name="">4</option>
+                        <option name="">5</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" name="phone" class="form-control phone2 phone13" placeholder="Ваш номер телефона">
+                    </div>
+                      <input type="hidden" value="Двери МДФ">
+                    <div class="form-group">
+                      <input type="submit" value="Заказать" class="btn btn-success">
+                      <br>
+                    </div>
+                    </form>
+                  </div>
+                  <div class="col-sm-6">
+                    <img class="big-img" src="img/4-2.jpg" alt="">
+                  </div>
+                  <div class="col-sm-12">
+                    <ul class="select-img">
+                      <li class="small-img" data-img="img/4-1.jpg"><img src="img/4-1.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/4-2.jpg"><img src="img/4-2.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/4-3.jpg"><img src="img/4-3.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/4-4.jpg"><img src="img/4-4.jpg" alt=""></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="modal-footer">
+                  fgdfgdfdgfdgd
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Product 5 -->
+          <div class="col-md-3 mix poroshok" data-my-order="789.23" data-toggle="modal" data-target=".product-5">
             <div class="absolute">
               <div class="product">
-                <h3>Xiaomi 20800mAh</h3>
-                <img src="img/demo.jpg" alt="">
+                <h3>С порошковым напылением</h3>
+                <img src="img/5-1.jpg" alt="">
                 <div class="hover-content">
                 </div>
                 <div class="price">789.23 <span>грн.</span></div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 mix category-1" data-my-order="286.45">
+          <div class="modal fade product-5" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">С порошковым напылением</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="col-sm-6">
+                    <p>
+                      Двери с порошковым напылением, устанавливают в основном на главном входе или складских помещениях. Мощная металлическая конструкция двери, позволяет противостоять механическим повреждениям, а порошковое напыление, поможет защитить дверь от суровых погодных условий. Такая дверь очень практичная, доступная цена и простота в эксплуатации оставит довольным даже самого требовательного клиента.
+                    </p>
+                    <form role="form" class="ajaxform14" method="POST">
+                    <div class="form-group">
+                      <label for="inner5" >Внутреняя отделка</label>
+                      <select id="inner5" name="" class="form-control">
+                        <option name="">1</option>
+                        <option name="">2</option>
+                        <option name="">3</option>
+                        <option name="">4</option>
+                        <option name="">5</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" name="phone" class="form-control phone2 phone14" placeholder="Ваш номер телефона">
+                    </div>
+                      <input type="hidden" value="С порошковым напылением">
+                    <div class="form-group">
+                      <input type="submit" value="Заказать" class="btn btn-success">
+                      <br>
+                    </div>
+                    </form>
+                  </div>
+                  <div class="col-sm-6">
+                    <img class="big-img" src="img/5-6.jpg" alt="">
+                  </div>
+                  <div class="col-sm-12">
+                    <ul class="select-img">
+                      <li class="small-img" data-img="img/5-1.jpg"><img src="img/5-1.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/5-2.jpg"><img src="img/5-2.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/5-3.jpg"><img src="img/5-3.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/5-4.jpg"><img src="img/5-4.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/5-5.jpg"><img src="img/5-5.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/5-6.jpg"><img src="img/5-6.jpg" alt=""></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="modal-footer">
+                  fgdfgdfdgfdgd
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Product - 6 -->
+          <div class="col-md-3 mix laminat" data-my-order="286.45" data-toggle="modal" data-target=".product-6">
             <div class="absolute">
               <div class="product">
-                <h3>sfsdfsdfsdf</h3>
-                <img src="img/demo.jpg" alt="">
+                <h3>Ламинат</h3>
+                <img src="img/6-4.jpg" alt="">
                 <div class="hover-content">
                 </div>
                 <div class="price">286.45 <span>грн.</span></div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 mix category-2" data-my-order="486.45">
+          <div class="modal fade product-6" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">Ламинат</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="col-sm-6">
+                    <p>
+                      <strong>Двери ламинат</strong> - это очень красивая и практичная дверь, которая устанавливается можно установить не только внутри помещения, а и снаружи все благодаря новой технологии. Плита ламинат не подвергается деформации от внешних погодных условий. Металлические двери ламинат, выглядят очень современно и оригинально. Ламинат является искусственным материалом. Чаще всего его выпускают в форме небольших плит или полосок. В основе подложка, состоящая из целлюлозы и искусственных материалов.
+                    </p>
+                    <form role="form" class="ajaxform15" method="POST">
+                    <div class="form-group">
+                      <label for="inner6" >Внутреняя отделка</label>
+                      <select id="inner6" name="" class="form-control">
+                        <option name="">1</option>
+                        <option name="">2</option>
+                        <option name="">3</option>
+                        <option name="">4</option>
+                        <option name="">5</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" name="phone" class="form-control phone2 phone15" placeholder="Ваш номер телефона">
+                    </div>
+                      <input type="hidden" value="Ламинат">
+                    <div class="form-group">
+                      <input type="submit" value="Заказать" class="btn btn-success">
+                      <br>
+                    </div>
+                    </form>
+                  </div>
+                  <div class="col-sm-6">
+                    <img class="big-img" src="img/6-4.jpg" alt="">
+                  </div>
+                  <div class="col-sm-12">
+                    <ul class="select-img">
+                      <li class="small-img" data-img="img/6-1.jpg"><img src="img/6-1.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/6-2.jpg"><img src="img/6-2.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/6-3.jpg"><img src="img/6-3.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/6-4.jpg"><img src="img/6-4.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/6-5.jpg"><img src="img/6-5.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/6-6.jpg"><img src="img/6-6.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/6-7.jpg"><img src="img/6-7.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/6-8.jpg"><img src="img/6-8.jpg" alt=""></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="modal-footer">
+                  fgdfgdfdgfdgd
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Product - 7 -->
+          <div class="col-md-3 mix kovka" data-my-order="486.45" data-toggle="modal" data-target=".product-7">
             <div class="absolute">
               <div class="product">
-                <h3>sfsdfsdfsdf</h3>
-                <img src="img/demo.jpg" alt="">
+                <h3>Кованые</h3>
+                <img src="img/7-4.jpg" alt="">
                 <div class="hover-content">
                 </div>
                 <div class="price">486.45 <span>грн.</span></div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 mix category-2" data-my-order="206.45">
+          <div class="modal fade product-7" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">Ламинат</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="col-sm-6">
+                    <p>
+                      Кованые элементы укрепляют конструкцию двери, дополнительно защищая её. Для декоративной отделки дверного блока используется: ковка с различными декоративными рисунками и фигурами. Дверное полотно для значительного усиления конструкции изготовлено из профильной трубы. Внутренняя часть дверного полотна заполнена утеплителем и обшита холоднокатаным листовым металлом толщиной 3 мм. Дверная коробка покрывается специальной полимерной краской, с полимеризацией в печи. Дверные блоки для герметизации и шумоизоляции укомплектованы двумя контурами уплотнения. В дверных блоках установлена защита от среза, что не позволяет вскрыть дверь даже при срезанных дверных петлях. Для декоративной отделки дверного блока используется: ковка с различными декоративными рисунками и фигурами.
+                    </p>
+                    <form role="form" class="ajaxform16" method="POST">
+                    <div class="form-group">
+                      <label for="inner7" >Внутреняя отделка</label>
+                      <select id="inner7" name="" class="form-control">
+                        <option name="">1</option>
+                        <option name="">2</option>
+                        <option name="">3</option>
+                        <option name="">4</option>
+                        <option name="">5</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" name="phone" class="form-control phone2 phone16" placeholder="Ваш номер телефона">
+                    </div>
+                      <input type="hidden" value="Кованые">
+                    <div class="form-group">
+                      <input type="submit" value="Заказать" class="btn btn-success">
+                      <br>
+                    </div>
+                    </form>
+                  </div>
+                  <div class="col-sm-6">
+                    <img class="big-img" src="img/7-4.jpg" alt="">
+                  </div>
+                  <div class="col-sm-12">
+                    <ul class="select-img">
+                      <li class="small-img" data-img="img/7-1.jpg"><img src="img/7-1.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/7-2.jpg"><img src="img/7-2.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/7-3.jpg"><img src="img/7-3.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/7-4.jpg"><img src="img/7-4.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/7-5.jpg"><img src="img/7-5.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/7-6.jpg"><img src="img/7-6.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/7-7.jpg"><img src="img/7-7.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/7-8.jpg"><img src="img/7-8.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/7-9.jpg"><img src="img/7-9.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/7-10.jpg"><img src="img/7-10.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/7-11.jpg"><img src="img/7-11.jpg" alt=""></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="modal-footer">
+                  fgdfgdfdgfdgd
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Product - 8 -->
+          <div class="col-md-3 mix arka" data-my-order="206.45" data-toggle="modal" data-target=".product-8">
             <div class="absolute">
               <div class="product">
-                <h3>sfsdfsdfsdf</h3>
-                <img src="img/demo.jpg" alt="">
+                <h3>Арочные двери</h3>
+                <img src="img/8-1.jpg" alt="">
                 <div class="hover-content">
                 </div>
                 <div class="price">206.45 <span>грн.</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade product-8" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title" id="myModalLabel">Арочные двери</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="col-sm-6">
+                    <p>
+                      Арочные двери обладают всеми характеристиками, которые должны иметь современные входные конструкции. Отменное качество, неповторимый дизайн, безупречный стиль таких изделий не оставят равнодушными даже самых искушенных домовладельцев. Арочные двери изготовляют по индивидуальному заказу и представляют собой входные конструкции, верхняя часть которых имеет криволинейную поверхность, вписанную в арку. Входные арочные двери выгодно отличаются своей нестандартной формой от привычных прямоугольных конструкций, и будут являться незаурядным элементом интерьера Вашего дома. Раскованность форм предполагает изысканную отделку, такие изделия могут быть украшены вставками из стекла или витража, коваными элементами, фрезерованием. Отделка внутренней и внешней стороны может отличаться, всё зависит от Вашей фантазии.
+                    </p>
+                    <form role="form" class="ajaxform17" method="POST">
+                    <div class="form-group">
+                      <label for="inner8" >Внутреняя отделка</label>
+                      <select id="inner8" name="" class="form-control">
+                        <option name="">1</option>
+                        <option name="">2</option>
+                        <option name="">3</option>
+                        <option name="">4</option>
+                        <option name="">5</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <input type="text" name="phone" class="form-control phone2 phone17" placeholder="Ваш номер телефона">
+                    </div>
+                      <input type="hidden" value="Арочные двери">
+                    <div class="form-group">
+                      <input type="submit" value="Заказать" class="btn btn-success">
+                      <br>
+                    </div>
+                    </form>
+                  </div>
+                  <div class="col-sm-6">
+                    <img class="big-img" src="img/8-1.jpg" alt="">
+                  </div>
+                  <div class="col-sm-12">
+                    <ul class="select-img">
+                      <li class="small-img" data-img="img/8-1.jpg"><img src="img/8-1.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/8-2.jpg"><img src="img/8-2.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/8-3.jpg"><img src="img/8-3.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/8-4.jpg"><img src="img/8-4.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/8-5.jpg"><img src="img/8-5.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/8-6.jpg"><img src="img/8-6.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/8-7.jpg"><img src="img/8-7.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/8-8.jpg"><img src="img/8-8.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/8-9.jpg"><img src="img/8-9.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/8-10.jpg"><img src="img/8-10.jpg" alt=""></li>
+                      <li class="small-img" data-img="img/8-11.jpg"><img src="img/8-11.jpg" alt=""></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="modal-footer">
+                  fgdfgdfdgfdgd
+                </div>
               </div>
             </div>
           </div>
@@ -278,7 +767,92 @@
   </div>
 </div>
 
-<script src="js/libs.min.js"></script>
+<div class="how-we-work">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>How we work?</h2>
+        <div class="col-md-12">
+          <div class="row flex wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".0s">
+            <div class="col-md-3"><img src="//placehold.it/250x250" alt=""></div>
+            <div class="col-md-9">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Мир ведущими строчка всеми о большой имеет дорогу которой рекламных, встретил ты снова, реторический маленький имени текстами раз переулка. Использовало?</p>
+            </div>
+          </div>
+          <div class="row flex wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".2s">
+            <div class="col-md-3"><img src="//placehold.it/250x250" alt=""></div>
+            <div class="col-md-9">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Мир ведущими строчка всеми о большой имеет дорогу которой рекламных, встретил ты снова, реторический маленький имени текстами раз переулка. Использовало?</p>
+            </div>
+          </div>
+          <div class="row flex wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".4s">
+            <div class="col-md-3"><img src="//placehold.it/250x250" alt=""></div>
+            <div class="col-md-9">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Мир ведущими строчка всеми о большой имеет дорогу которой рекламных, встретил ты снова, реторический маленький имени текстами раз переулка. Использовало?</p>
+            </div>
+          </div>
+          <div class="row flex wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".6s">
+            <div class="col-md-3"><img src="//placehold.it/250x250" alt=""></div>
+            <div class="col-md-9">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Мир ведущими строчка всеми о большой имеет дорогу которой рекламных, встретил ты снова, реторический маленький имени текстами раз переулка. Использовало?</p>
+            </div>
+          </div>
+          <div class="row flex wow fadeInLeft" data-wow-duration="1s" data-wow-delay=".8s">
+            <div class="col-md-3"><img src="//placehold.it/250x250" alt=""></div>
+            <div class="col-md-9">
+              <h3>Lorem ipsum dolor sit amet.</h3>
+              <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Мир ведущими строчка всеми о большой имеет дорогу которой рекламных, встретил ты снова, реторический маленький имени текстами раз переулка. Использовало?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="questions">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2  class="wow bounceIn" data-wow-duration="1s" data-wow-delay=".4s">
+          Остались вопросы?
+        </h2>
+      </div>
+    </div>
+    <div class="row flex">      
+      <div class="col-md-6">        
+        <p>Просто оставьте Ваш номер телефона и через несколько минут наш менеджер перезвонит Вам, и ответит на все Ваши вопросы.</p> 
+      </div>
+      <div class="col-md-6 right">
+        <form class="ajaxform2" method="POST">
+          <input type="text" name="phone" class="phone2 phone39" placeholder="Введите номер телефона">
+          <input type="submit">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <div class="col-md-6">
+      <p>Copyright &copy; 2016</p>
+    </div>
+    <div class="col-md-6 right">
+      <p>
+        Создание сайта 
+        <a href="//mediaone.in.ua" target="_blank">
+          <img alt="Создание сайтов в Киеве - Mediaone.in.ua" src="img/maps.svg">
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
 
 <!-- build:js -->
 <script src="js/main.js"></script>
