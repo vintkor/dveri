@@ -374,8 +374,8 @@ $(document).ready(function(){
 	}
 
 	$(document).ready(function() {
-	    setEqualHeight($(".h3-height"));
-	    setEqualHeight($(".mix"));
+	    setEqualHeight($(".h3-wrap h3"));
+        setEqualHeight($(".mix"));
 	});
 		
 })
