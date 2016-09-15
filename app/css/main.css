@@ -53,6 +53,11 @@
   src: url(../fonts/Russo-One.ttf);
   font-weight: 700; }
 
+@font-face {
+  font-family: 'Play';
+  src: url(../fonts/Play-Regular.ttf);
+  font-weight: 700; }
+
 * {
   margin: 0;
   padding: 0;
@@ -70,6 +75,9 @@ body {
 p {
   font-size: 16px; }
 
+h2, h3, h4, h5, h6 {
+  font-weight: 700; }
+
 .flex {
   display: -webkit-box;
   display: -webkit-flex;
@@ -79,6 +87,23 @@ p {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+
+.flex-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+label {
+  margin-right: 20px;
+  margin-bottom: 10px; }
 
 .preloader {
   display: block;
@@ -371,16 +396,17 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px; }
 
 .questions {
-  background: #f7f7f7;
+  background: #364b60;
   padding: 60px 0; }
   .questions h2 {
     font-size: 38.4px;
     margin-bottom: 30px;
-    color: #6C991F; }
+    color: #fff; }
   .questions p {
     font-size: 19.2px;
     line-height: 32px;
-    text-align: center; }
+    text-align: center;
+    color: #fff; }
   .questions input {
     border: 2px solid #dedede;
     width: 100%;
@@ -398,10 +424,12 @@ h1, h2, h3, h4, h5, h6 {
     .questions input:hover, .questions input:focus {
       border-color: #6C991F; }
   .questions input[type="submit"] {
-    background: #dedede;
-    color: #2D3E50; }
+    border-color: #6C991F;
+    background: #6C991F;
+    color: #fff; }
     .questions input[type="submit"]:hover, .questions input[type="submit"]:focus {
-      background: #6C991F;
+      background: #4e6f16;
+      border-color: #4e6f16;
       color: #fff; }
 
 .footer {
@@ -441,3 +469,19 @@ h1, h2, h3, h4, h5, h6 {
 .h3-wrap h3 {
   display: block;
   margin-bottom: 50px; }
+
+.response {
+  padding: 60px 0;
+  background: #E7EBF1; }
+  .response h2 {
+    font-size: 38.4px;
+    margin-bottom: 60px; }
+  .response #video-gallery {
+    text-align: center; }
+    .response #video-gallery img {
+      margin: 0 5px;
+      border: 3px solid transparent;
+      -webkit-transition: .2s;
+      transition: .2s; }
+      .response #video-gallery img:hover {
+        border: 3px solid rgba(108, 153, 31, 0.6); }

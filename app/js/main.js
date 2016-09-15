@@ -377,5 +377,13 @@ $(document).ready(function(){
 	    setEqualHeight($(".h3-wrap h3"));
         setEqualHeight($(".mix"));
 	});
+
+    /*------------------------------- Подключение LightGallery -----------------------------*/
+    $('#video-gallery').lightGallery({
+        loadYoutubeThumbnail: true,
+        youtubeThumbSize: 'default',
+        loadVimeoThumbnail: true,
+        vimeoThumbSize: 'thumbnail_medium',
+    }); 
 		
 })

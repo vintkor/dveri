@@ -30,9 +30,28 @@ p {
   font-size: $size;
 }
 
+// p,li,a,div,span {
+//   font-family: "Play", sans-serif;
+// }
+
+h2,h3,h4,h5,h6 {
+  // font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+}
+
 .flex {
   display: flex;
   align-items: center;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+label {
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 
 .preloader {
@@ -350,17 +369,18 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .questions {
-  background: $grey;
+  background: lighten($blue, 5%);
   padding: 60px 0;
   h2 {
     font-size: $size * 2.4;
     margin-bottom: 30px;
-    color: $green;
+    color: $white;
   }
   p {
     font-size: $size * 1.2;
     line-height: $size * 2;
     text-align: center;
+    color: $white;
   }
   input {
     border: 2px solid darken($grey, 10%);
@@ -381,11 +401,13 @@ h1,h2,h3,h4,h5,h6 {
     }
   }
   input[type="submit"] {
-    background: darken($grey, 10%);
-    color: $blue;
+    border-color: $green;
+    background: $green;
+    color: $white;
     &:hover,
     &:focus {
-      background: $green;
+      background: darken($green, 10%);
+      border-color: darken($green, 10%);
       color: $white;
     }
   }
@@ -432,5 +454,25 @@ h1,h2,h3,h4,h5,h6 {
   h3 {
     display: block;
     margin-bottom: 50px;
+  }
+}
+
+.response {
+  padding: 60px 0;
+  background: #E7EBF1;
+  h2 {
+    font-size: $size * 2.4;
+    margin-bottom: 60px;
+  }
+  #video-gallery {
+    text-align: center;
+    img {
+      margin: 0 5px;
+      border: 3px solid transparent;
+      transition: .2s;
+      &:hover {
+        border: 3px solid rgba($green, .6);
+      }
+    }
   }
 }
