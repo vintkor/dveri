@@ -392,6 +392,8 @@ h1, h2, h3, h4, h5, h6 {
   .how-we-work h2 {
     font-size: 38.4px;
     margin-bottom: 60px; }
+  .how-we-work h3 {
+    text-align: left; }
   .how-we-work .flex {
     margin-bottom: 30px; }
 
@@ -485,3 +487,110 @@ h1, h2, h3, h4, h5, h6 {
       transition: .2s; }
       .response #video-gallery img:hover {
         border: 3px solid rgba(108, 153, 31, 0.6); }
+
+.h3-wrap-first {
+  margin-bottom: 20px; }
+
+@media (max-width: 1200px) {
+  .section-1 h2 {
+    font-size: 57.6px; }
+  .section-1 .door {
+    width: 30%;
+    height: auto; } }
+
+@media (max-width: 992px) {
+  .header .flex {
+    height: 10vh; }
+  .header h1 {
+    font-size: 24px; }
+  .header .phone {
+    font-size: 22.4px;
+    line-height: 25.6px; }
+    .header .phone span {
+      font-size: 17.6px; }
+  .section-1 h2 {
+    font-size: 48px; }
+  .section-1 p {
+    font-size: 17.6px; }
+    .section-1 p span {
+      font-size: 48px; }
+  .section-1 .door {
+    right: 60px;
+    width: 40%;
+    height: auto; } }
+
+@media (max-width: 768px) {
+  .flex {
+    display: block; }
+  .flex-wrap {
+    display: block; }
+  label {
+    margin-right: 20px;
+    margin-bottom: 10px; }
+  .right {
+    text-align: center; }
+  .bounce {
+    display: none; }
+  /* ______________________________ Header ______________________________ */
+  .header .flex {
+    height: auto; }
+  .header h1 {
+    font-size: 17.6px; }
+  .header .logo {
+    margin-top: 10px; }
+  .header .phone {
+    font-size: 19.2px;
+    line-height: 22.4px;
+    margin: 0; }
+    .header .phone span {
+      font-size: 16px; }
+  .section-1 {
+    height: auto;
+    padding: 40px 0; }
+    .section-1 h2 {
+      font-size: 22.4px; }
+    .section-1 p {
+      font-size: 16px; }
+      .section-1 p span {
+        font-size: 22.4px; }
+    .section-1 .door {
+      right: 10px;
+      top: 50px;
+      width: 28%;
+      height: auto; }
+  /* ______________________________ Section-2 ______________________________ */
+  .section-2 {
+    padding: 40px 0; }
+    .section-2 img {
+      width: 40%; }
+    .section-2 h2 {
+      font-size: 22.4px;
+      margin-bottom: 20px; }
+    .section-2 h3 {
+      font-size: 19.2px; }
+    .section-2 p {
+      text-align: center; }
+  /* ______________________________ Section-3 ______________________________ */
+  .section-3 {
+    padding: 40px 0; }
+    .section-3 h2 {
+      font-size: 22.4px;
+      margin-bottom: 40px; }
+  .product {
+    margin-bottom: 15px; }
+    .product h3 {
+      font-size: 19.2px; }
+    .product img {
+      padding: 10px 0; }
+    .product .price {
+      font-size: 19.2px; }
+  .how-we-work {
+    padding: 40px 0; }
+    .how-we-work h2 {
+      font-size: 22.4px;
+      margin-bottom: 40px; }
+    .how-we-work h3 {
+      text-align: left;
+      font-size: 19.2px; }
+  .footer p {
+    text-align: center; } }

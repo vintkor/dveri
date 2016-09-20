@@ -1,0 +1,25 @@
+@media (max-width: 1200px) {
+
+	$green: #6C991F;
+	$dark-green: darken($green, 25%);
+	$black: #000;
+	$light-black: lighten($black, 25%);
+	$white: #fff;
+	$grey: #f7f7f7;
+	$yellow: #aba012;
+	$blue: #2D3E50;
+	$red: #D84747;
+
+	$size: 16px;
+
+	.section-1 {
+	  h2 {
+	    font-size: $size * 3.6;
+	  }
+	  .door {
+	    width: 30%;
+	    height: auto;
+	  }
+	}
+
+}

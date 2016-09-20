@@ -10,6 +10,7 @@ $red: #D84747;
 
 $size: 16px;
 
+
 @import "_fonts";
 
 * {
@@ -363,6 +364,9 @@ h1,h2,h3,h4,h5,h6 {
     font-size: $size * 2.4;
     margin-bottom: 60px;
   }
+  h3 {
+    text-align: left;
+  }
   .flex {
     margin-bottom: 30px;
   }
@@ -476,3 +480,12 @@ h1,h2,h3,h4,h5,h6 {
     }
   }
 }
+
+.h3-wrap-first {
+  margin-bottom: 20px;
+}
+
+
+@import "_min-1200";
+@import "_max-992";
+@import "_max-768";

@@ -1,3 +1,15 @@
+/*------------------------------- Выравнивание блоков по высоте -----------------------------*/
+    function setEqualHeight(columns){
+        var tallestcolumn = 0;
+        columns.each(function(){
+            currentHeight = $(this).height();
+            if(currentHeight > tallestcolumn){
+               tallestcolumn = currentHeight;
+            }
+        });
+        columns.height(tallestcolumn);
+    }
+
 /*__________________________ Other scripts __________________________*/
 
 $(document).ready(function(){
@@ -361,21 +373,18 @@ $(document).ready(function(){
         return false; // вырубаем стандартную отправку формы
 	});
 
-	/*------------------------------- Выравнивание блоков по высоте -----------------------------*/
-	function setEqualHeight(columns){
-	    var tallestcolumn = 0;
-	    columns.each(function(){
-	    	currentHeight = $(this).height();
-	        if(currentHeight > tallestcolumn){
-	    	   tallestcolumn = currentHeight;
-	        }
-	    });
-	    columns.height(tallestcolumn);
-	}
-
 	$(document).ready(function() {
-	    setEqualHeight($(".h3-height"));
-	    setEqualHeight($(".mix"));
+	    setEqualHeight($(".h3-wrap h3"));
+        setEqualHeight($(".mix"));
+        setEqualHeight($(".h3-wrap-first"));
 	});
+
+    /*------------------------------- Подключение LightGallery -----------------------------*/
+    $('#video-gallery').lightGallery({
+        loadYoutubeThumbnail: true,
+        youtubeThumbSize: 'default',
+        loadVimeoThumbnail: true,
+        vimeoThumbSize: 'thumbnail_medium',
+    }); 
 		
 })

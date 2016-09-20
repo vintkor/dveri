@@ -1,5 +1,49 @@
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
 
+	$green: #6C991F;
+	$dark-green: darken($green, 25%);
+	$black: #000;
+	$light-black: lighten($black, 25%);
+	$white: #fff;
+	$grey: #f7f7f7;
+	$yellow: #aba012;
+	$blue: #2D3E50;
+	$red: #D84747;
 
+	$size: 16px;
+
+	.header {
+	  .flex {
+	    height: 10vh;
+	  }
+	  h1 {
+	  	font-size: $size * 1.5;
+	  }
+	  .phone {
+	    font-size: $size * 1.4;
+	    line-height: $size * 1.6;
+	    span {
+	      font-size: $size * 1.1;
+	    }
+	  }
+	}
+
+	.section-1 {
+	  h2 {
+	    font-size: $size * 3;
+	  }
+	  p {
+	    font-size: $size * 1.1;
+
+	    span {
+	      font-size: $size * 3;
+	    }
+	  }
+	  .door {
+	    right: 60px;
+	    width: 40%;
+	    height: auto;
+	  }
+	}
 
 }
